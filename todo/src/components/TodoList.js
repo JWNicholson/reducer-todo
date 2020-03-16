@@ -32,7 +32,7 @@ const deleteHandler = event => {
 console.log(state)
 
  return (
-     <div className= "mainDiv"> 
+     <div className= "formWrapper"> 
       <TodoForm addTodoList={addTodoList} deleteHandler={deleteHandler} />   
      {state.map(item => {
          return <Todo todo={item} key={item.id} toggleTodo={toggleTodo} />

@@ -5,8 +5,14 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+ 
+
+      <div className="contentWrapper">
       <h1>Another Fabulous Todo List</h1>
-      <TodoList />
+        <TodoList />
+      </div>
+      
+    
     </div>
   );
 }

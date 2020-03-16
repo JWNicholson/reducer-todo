@@ -1,4 +1,7 @@
 import React from "react";
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
 
 class TodoForm extends React.Component {
     constructor(props){
@@ -25,15 +28,15 @@ render(){
       return (
         <div>
             <form onSubmit={this.submitHandler}>
-            <input 
-            type="text"
-            name="userInput"
-            value={this.state.userInput}
-            onChange={this.changeHandler}
+             <TextField id="standard-basic" label="your todo here"  
+                  type="text"
+                  name="userInput"
+                  value={this.state.userInput}
+                  onChange={this.changeHandler}
              />
-             <button type="submit">Add a To-do</button>
+             <Button variant="outlined" color="primary" type="submit">Add a To-do</Button>
             </form>
-            <button onClick={this.props.deleteHandler}>Delete finished To-dos</button>
+            <Button variant="contained" color="secondary" onClick={this.props.deleteHandler}>Delete finished</Button>
         </div>
     )
  }
