@@ -1,0 +1,52 @@
+.App {
+ display:flex;
+ align-items: center;
+ flex-direction: column;
+ max-width:680px;
+ background-color:cornsilk;
+ height: 100vw;
+ margin:0 auto;
+}
+h1{
+  color:#291804;
+}
+.item.completed{
+  color:rgb(171, 166, 154);
+  text-decoration: line-through;
+}
+
+.contentWrapper{
+  width:90%;
+}
+
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  border:2px solid rgb(36, 17, 2);
+  padding: 14px;
+  border-radius: 4px;
+  background: rgb(227,212,179);
+  background: radial-gradient(circle, rgba(227,212,179,1) 0%, rgba(214,168,113,1) 100%);
+
+  -webkit-box-shadow: -5px 10px 8px -8px rgba(140,138,135,0.55);
+-moz-box-shadow: -5px 10px 8px -8px rgba(140,138,135,0.55);
+box-shadow: -5px 10px 8px -8px rgba(140,138,135,0.55);
+}
+
+div.MuiFormControl-root.MuiTextField-root{
+  width:50%;
+}
+
+.MuiButton-outlined.MuiButton-outlinedPrimary{
+  margin:12px;
+}
+
+.MuiButton-contained.MuiButton-containedSecondary{
+  margin: 24px 0 ;
+}
+
+.item{
+  font-size: 1.5em;
+  line-height: 2;
+}
